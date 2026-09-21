@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><b></big>Universal Photography<big></b></title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: white;
+            color: #222;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.35),
+                    rgba(0,0,0,0.35)
+                ),
+                url("https://tse4.mm.bing.net/th/id/OIP.2vZzecPobgyRRuN-OeZm4wHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            background: #12cbb1;
+            color: white;
+
+            padding: 18px 40px;
+
+            border-radius: 5px;
+            text-decoration: none;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #0da990;
+            transform: translateY(-2px);
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            background: #10c7b0;
+            color: white;
+
+            padding: 100px 25px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 50px;
+            font-weight: 500;
+            margin-bottom: 45px;
+        }
+
+        .about p {
+            max-width: 850px;
+            margin: auto;
+
+            font-size: 21px;
+            line-height: 1.8;
+        }
+
+        /* COLLECTION */
+        .products {
+            padding: 80px 25px;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 45px;
+            margin-bottom: 45px;
+        }
+
+        .product-container {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            border-radius: 10px;
+            overflow: hidden;
+
+            background: #f7f7f7;
+
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-btn {
+            display: inline-block;
+
+            background: #10c7b0;
+            color: white;
+
+            padding: 12px 25px;
+
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #111;
+            color: white;
+
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            .hero {
+                min-height: 700px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+
+            .whatsapp-btn {
+                font-size: 17px;
+                padding: 16px 28px;
+            }
+
+            .about {
+                padding: 70px 20px;
+            }
+
+            .about h2 {
+                font-size: 40px;
+            }
+
+            .about p {
+                font-size: 18px;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+                max-width: 450px;
+            }
+
+            .products h2 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1><big>Universal Photography</big></h1>
+
+            <p>Capture moments, create memories.</p>
+
+            <!-- WHATSAPP NOW -->
+            <a
+                class="whatsapp-btn"
+                href="https://wa.me/918105050551?text=I%20want%20ID"
+                target="_blank"
+            >
+                💬 WhatsApp Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT US -->
+    <section class="about">
+
+        <h2>About us</h2>
+
+        <p>
+            Universal Photography is dedicated to capturing
+            beautiful moments and creating memorable experiences.
+            We combine creativity, quality and passion to make
+            every photograph special.
+        </p>
+
+    </section>
+
+
+    <!-- OUR SERVICES -->
+    <section class="products">
+
+        <h2>Our Services</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.xp5HL8Wgf-3jcPBMned4rAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Wedding Photography"
+                >
+
+                <div class="product-info">
+
+                    <h3>Wedding Photography</h3>
+
+                    <div class="price">Contact Us</div>
+
+                    <a
+                        class="order-btn"
+                        href="https://wa.me/918105050551?text=I%20want%20ID"
+                        target="_blank"
+                    >
+                        Contact on WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.MUoXAw6w0ugeJ7a6FSwn8wHaId?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Portrait Photography"
+                >
+
+                <div class="product-info">
+
+                    <h3>Portrait Photography</h3>
+
+                    <div class="price">Contact Us</div>
+
+                    <a
+                        class="order-btn"
+                        href="https://wa.me/918105050551?text=I%20want%20ID"
+                        target="_blank"
+                    >
+                        Contact on WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.1yymdiEHGWStNFKbeRYVtwAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Event Photography"
+                >
+
+                <div class="product-info">
+
+                    <h3>Event Photography</h3>
+
+                    <div class="price">Contact Us</div>
+
+                    <a
+                        class="order-btn"
+                        href="https://wa.me/918105050551?text=I%20want%20ID"
+                        target="_blank"
+                    >
+                        Contact on WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact">
+
+        <h2>Universal Photography</h2>
+
+        <p>Capture • Create • Remember</p>
+
+        <a
+            class="whatsapp-btn"
+            href="https://wa.me/918105050551?text=I%20want%20ID"
+            target="_blank"
+        >
+            💬 WhatsApp Now
+        </a>
+
+    </section>
+
+</body>
+</html>
